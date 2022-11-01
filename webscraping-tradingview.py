@@ -40,10 +40,33 @@ print(title.text)
 #keyword: allText = Obj.find(id="title",class="text")
 
 tablecells = soup.findAll("div", attrs = {"class": "table-cell"})
+counter = 1
 
 print(tablecells[0].text)
 #will print out a list
 #Number 1 is the actual text
+
+
+for x in range(5):
+    name = tablecells[counter].text
+    change = tablecells[counter+2].text
+    high = float(tablecells[counter+4].text)
+    low = float(tablecells[counter+5].text)
+
+    calc_change = round(((high - low) / low) * 100, 2)
+
+    print(name)
+    print(f"change%:{change}")
+    print(f"High: {high}")
+    print(f"Low: {low}")
+    print(f"Calculated Channge: {calc_change}%")
+    print()
+    print()
+
+
+
+
+    counter += 11
 
 print(tablecells[0].text)
 print(tablecells[1].text)
