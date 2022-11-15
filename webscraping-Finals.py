@@ -26,20 +26,20 @@ myclasses_file = open('classes.csv','r')
 myclasses = csv.reader(myclasses_file, delimiter = ",")
 next(myclasses)
 
-for rec in myclasses_file:
+for rec in myclasses :
     day = rec[0]
     time = rec[1]
 
-for row in all_rows:
-    cell = row.findAll('td')
-    if cell:
-        sch_day = cell[0].text
-        sch_time = cell[1].text
-        exam_day = cell[2].text
-        exam_time = cell[3].text
+    for row in all_rows:
+        cell = row.findAll('td')
+        if cell:
+            sch_day = cell[0].text
+            sch_time = cell[1].text
+            exam_day = cell[2].text
+            exam_time = cell[3].text
 
-        if sch_day == day and sch_time == time:
-            print(f"Class day and time: {day} - {time}")
-            print(f"Exam day and timme: {exam_day} - {exam_time}")
-            print()
-            print()
+            if sch_day == day and sch_time == time:
+                print(f"Class day and time: {day} - {time}")
+                print(f"Exam day and timme: {exam_day} - {exam_time}")
+                print()
+                print()
