@@ -16,7 +16,7 @@ if random_chapter < 0:
 else:
     random_chapter = str(random_chapter)
 
-webpage = 'https://biblehub.com/asv/JHN' + random_chapter + ".htm"
+webpage = 'https://biblehub.com/asv/JHN/' + random_chapter + ".htm"
 print(webpage)
 
 
