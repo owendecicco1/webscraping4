@@ -1,2 +1,2 @@
 accountSSID = "ACaa32d3363ab92197df1587fd5c330f63"
-authToken = "d7bd73db9cf651a0f6f2266fd959eb17"
+authToken = "5e608c2d3ffe335a0e31c29d60da3680"
