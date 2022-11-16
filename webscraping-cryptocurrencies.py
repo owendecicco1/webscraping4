@@ -29,3 +29,4 @@ for x in range(1,6):
     print(f"Price based on percent change: {corresponding_price_based_on_change}")
     print()
     print()
+    print()
